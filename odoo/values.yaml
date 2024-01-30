@@ -153,7 +153,7 @@ roleBindings: {}
 #       name: pod-exec
 #       apiGroup: rbac.authorization.k8s.io
 
-odoohealthz: {}
+odoohealthz:
   #odoo_url: "http://localhost:8069"
   #odoo_timeout: 30
   #check_stuck_job: "False"
@@ -161,6 +161,7 @@ odoohealthz: {}
   #check_long_transaction: "False"
   #max_transaction_duration: "3600"
   #log_level:  "ERROR"
+  #check_db_expired: False
 
 preinit_manager: {}
   # celebrimbor_cert:
