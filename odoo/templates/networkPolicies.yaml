@@ -28,10 +28,7 @@ spec:
         matchLabels:
           app.kubernetes.io/name: kwkhtmltopdf
   - from:
-    - namespaceSelector:
-        matchLabels:
-          kubernetes.io/metadata.name: $(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)
-      podSelector:
+    - podSelector:
         matchLabels:
           queuejob: "true"
 
